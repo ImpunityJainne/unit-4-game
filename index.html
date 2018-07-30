@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Crystals Collector</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/reset.css">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container"></div>
+
+            <div class="row">
+                <h1 class="col-xs-12">Crystals Collector</h1>
+            </div>
+
+            <section>
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </section>
+
+            <div class="row">
+                <div id="random-number" class="col-xs-6 col-md-2"></div>
+                <div class="stats" class="col-xs-6 col-md-2">
+                    <p id="gameStatus"></p>
+                    <p id="winsTally"></p>
+                    <p id="lossesTally"></p>
+                </div>
+            </div>
+
+            <div class="row" id="jewels">
+                <span class="col-xs-6">
+                    <img id="diamond" src="assets/images/diamond.png"></img>
+                </span>
+                <span class="col-xs-6">
+                    <img id="ruby" src="assets/images/ruby.png"></img>
+                </span>
+                <span class="col-xs-6">
+                    <img id="emerald" src="assets/images/emerald.png"></img>
+                </span>
+                <span class="col-xs-6">
+                    <img id="sapphire" src="assets/images/sapphire.png"></img>
+                </span>                
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-4 stats">Your Total score is:</div>
+            </div>
+            <div class="row">
+                <div id="score" class="col-xs-12 col-md-4"></div>
+            </div>
+        </div>
+
+
+        
+        <script type="text/javascript" src="assets/javascript/game.js" async defer></script>
+    </body>
+</html>

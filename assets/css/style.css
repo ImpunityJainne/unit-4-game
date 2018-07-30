@@ -1,0 +1,27 @@
+body {
+    background: url(../images/castle.jpg);
+    margin: 30px;
+}
+
+img {
+    height: 80px;
+    padding: 10px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter:         drop-shadow(5px 5px 5px #222); 
+}
+
+#random-number, #score, .stats {
+
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+}
+
+#random-number, #score {
+    font-size: 2.5em;
+}
+
+row {
+    margin-bottom: 30px;
+}
+
